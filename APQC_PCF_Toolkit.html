@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>APQC-PCF Learning Toolkit — aisus | ISCS 30.40</title>
+<title>APQC-PCF Learning Toolkit | ISCS 30.40</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -213,12 +213,9 @@ section{padding:5.5rem 2rem;}
 .video-desc{font-size:.84rem;color:var(--muted);line-height:1.65;}
 .video-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem;padding-top:.7rem;border-top:1px solid var(--border);}
 .video-tag{font-size:.72rem;padding:3px 9px;border-radius:5px;background:rgba(26,84,148,.07);color:var(--blue2);font-weight:500;}
-.eval-strip{margin-top:1.2rem;padding:1.1rem 1.4rem;background:rgba(26,84,148,.05);border-radius:10px;border:1px solid var(--border);}
-.eval-strip-label{font-family:var(--font-mono);font-size:.63rem;color:var(--blue2);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.4rem;}
-.eval-strip-row{display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;}
-.eval-score{font-size:.85rem;font-weight:700;color:var(--text);}
-.eval-stars{color:var(--gold);font-size:.95rem;letter-spacing:2px;}
-.eval-note{font-size:.83rem;color:var(--muted);}
+.eval-strip{margin-top:1.2rem;padding:1.3rem;background:var(--white);border-radius:10px;border:1px solid var(--border);border-left:4px solid var(--blue2);}
+.eval-strip-title{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.8rem;}
+.eval-strip-text{font-size:.88rem;color:var(--muted);line-height:1.6;margin-bottom:0.8rem;}
 
 .course2-block{background:var(--navy);border-radius:14px;padding:2.2rem;margin-top:1.2rem;display:grid;grid-template-columns:80px 1fr;gap:2rem;align-items:center;}
 .course2-icon-box{display:flex;align-items:center;justify-content:center;width:80px;height:80px;border-radius:12px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);}
@@ -229,16 +226,16 @@ section{padding:5.5rem 2rem;}
 .course2-link:hover{background:var(--gold2);transform:translateY(-1px);}
 
 /* eval table */
-.eval-table-wrap{margin-top:2.5rem;}
+.eval-table-wrap{margin-top:2.5rem; overflow-x:auto;}
 .eval-table-title{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:.9rem;}
 .eval-table{width:100%;border-collapse:collapse;font-size:.84rem;}
 .eval-table th{background:var(--navy);color:var(--white);padding:10px 13px;text-align:left;font-weight:600;font-size:.8rem;}
 .eval-table th:not(:first-child){text-align:center;}
-.eval-table td{padding:9px 13px;border-bottom:1px solid var(--border);vertical-align:middle;}
-.eval-table td:not(:first-child){text-align:center;}
+.eval-table td{padding:12px 13px;border-bottom:1px solid var(--border);vertical-align:top; line-height: 1.5;}
+.eval-table td:not(:first-child){text-align:left;}
 .eval-table tr:nth-child(even) td{background:rgba(26,84,148,.03);}
 .eval-table tr:nth-child(odd) td{background:var(--white);}
-.eval-table .total-row td{background:var(--navy);color:var(--white);font-weight:700;}
+.eval-table td:first-child{font-weight: 600;}
 .stars{color:var(--gold);}
 
 /* ── CASE STUDIES ────────────────────────────────────────────────────── */
@@ -387,7 +384,6 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
 
 <div id="progress-bar"></div>
 
-<!-- NAV -->
 <nav>
   <div class="nav-logo">
     <span class="nav-logo-badge">ISCS 30.40</span>
@@ -408,14 +404,13 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
   </ul>
 </nav>
 
-<!-- HERO -->
 <section id="home">
   <div class="hero-grid-bg"></div>
   <div class="hero-glow"></div>
   <div class="hero-content">
     <div class="hero-badge">
       <span class="hero-badge-dot"></span>
-      Online Learning Toolkit &middot; aisus
+      Online Learning Toolkit
     </div>
     <h1 class="hero-title">
       APQC Process<br><em>Classification</em><br>Framework
@@ -443,10 +438,9 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
   </div>
 </section>
 
-<!-- OVERVIEW -->
 <section id="overview">
   <div class="container">
-    <div class="section-eyebrow reveal">01 &mdash; Overview</div>
+    <div class="section-eyebrow reveal">01: Overview</div>
     <h2 class="section-title reveal">What is the APQC-PCF?</h2>
     <div class="overview-grid">
       <div class="overview-body reveal">
@@ -455,7 +449,7 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
         <p>It is still an evolving model, updated regularly to remain current with global business practices. Enhancements are driven by the development of new definitions, processes, and measures within the Open Standards Benchmarking (OSB) database.</p>
         <div class="highlight-quote">
           <p>"The PCF is the world's most widely used process framework. It gives organizations standardized definitions for functions, processes, and activities independent of business model or structure."</p>
-          <cite>&mdash; APQC</cite>
+          <cite>- APQC</cite>
         </div>
       </div>
       <div class="reveal">
@@ -469,95 +463,104 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
         </div>
         <div class="mece-info">
           <div class="mece-info-label">Core Design Principle</div>
-          <div class="mece-info-text"><strong>MECE</strong> &mdash; Mutually Exclusive, Collectively Exhaustive. Every process element appears exactly once. No duplication, no gaps. This is what makes the PCF a reliable benchmarking tool.</div>
+          <div class="mece-info-text"><strong>MECE:</strong> Mutually Exclusive, Collectively Exhaustive. Every process element appears exactly once. No duplication, no gaps. This is what makes the PCF a reliable benchmarking tool.</div>
         </div>
       </div>
     </div>
 
-    <!-- PCF Structure Diagram -->
     <div class="pcf-structure-diagram reveal">
       <svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" font-family="DM Sans, system-ui, sans-serif">
-        <!-- Title -->
         <text x="450" y="28" text-anchor="middle" fill="#D4A843" font-size="13" font-family="DM Mono, monospace" letter-spacing="2">PCF STRUCTURE OVERVIEW</text>
-        <!-- Operating label -->
-        <text x="280" y="58" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" letter-spacing="1.5" font-family="DM Mono, monospace">OPERATING PROCESSES</text>
-        <!-- Operating boxes -->
-        <rect x="30" y="66" width="140" height="52" rx="7" fill="rgba(36,114,200,0.25)" stroke="rgba(36,114,200,0.5)" stroke-width="1.2"/>
-        <text x="100" y="87" text-anchor="middle" fill="white" font-size="9.5" font-weight="600">1.0</text>
-        <text x="100" y="101" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">Develop Vision</text>
-        <text x="100" y="113" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">&amp; Strategy</text>
-        <text x="176" y="93" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="12">&rsaquo;&rsaquo;</text>
-        <rect x="190" y="66" width="140" height="52" rx="7" fill="rgba(36,114,200,0.25)" stroke="rgba(36,114,200,0.5)" stroke-width="1.2"/>
-        <text x="260" y="87" text-anchor="middle" fill="white" font-size="9.5" font-weight="600">2.0</text>
-        <text x="260" y="101" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">Develop &amp; Manage</text>
-        <text x="260" y="113" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">Products &amp; Services</text>
-        <text x="336" y="93" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="12">&rsaquo;&rsaquo;</text>
-        <rect x="350" y="66" width="120" height="52" rx="7" fill="rgba(36,114,200,0.25)" stroke="rgba(36,114,200,0.5)" stroke-width="1.2"/>
-        <text x="410" y="87" text-anchor="middle" fill="white" font-size="9.5" font-weight="600">3.0</text>
-        <text x="410" y="101" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">Market &amp; Sell</text>
-        <text x="410" y="113" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">Products &amp; Services</text>
-        <text x="476" y="93" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="12">&rsaquo;&rsaquo;</text>
-        <rect x="490" y="66" width="120" height="52" rx="7" fill="rgba(36,114,200,0.25)" stroke="rgba(36,114,200,0.5)" stroke-width="1.2"/>
-        <text x="550" y="87" text-anchor="middle" fill="white" font-size="9.5" font-weight="600">4.0</text>
-        <text x="550" y="101" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">Deliver Products</text>
-        <text x="550" y="113" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">&amp; Services</text>
-        <text x="616" y="93" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="12">&rsaquo;&rsaquo;</text>
-        <rect x="630" y="66" width="120" height="52" rx="7" fill="rgba(36,114,200,0.25)" stroke="rgba(36,114,200,0.5)" stroke-width="1.2"/>
-        <text x="690" y="87" text-anchor="middle" fill="white" font-size="9.5" font-weight="600">5.0</text>
-        <text x="690" y="101" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">Manage Customer</text>
-        <text x="690" y="113" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">Service</text>
-        <!-- Divider -->
-        <line x1="30" y1="138" x2="780" y2="138" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="5,4"/>
-        <!-- Support label -->
+
+        <text x="450" y="58" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" letter-spacing="1.5" font-family="DM Mono, monospace">OPERATING PROCESSES</text>
+
+        <rect x="100" y="66" width="140" height="52" rx="7" fill="rgba(36,114,200,0.25)" stroke="rgba(36,114,200,0.5)" stroke-width="1.2"/>
+        <text x="170" y="87" text-anchor="middle" fill="white" font-size="9.5" font-weight="600">1.0</text>
+        <text x="170" y="101" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">Develop Vision</text>
+        <text x="170" y="113" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">&amp; Strategy</text>
+
+        <text x="247" y="93" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="12">&rsaquo;&rsaquo;</text>
+
+        <rect x="255" y="66" width="140" height="52" rx="7" fill="rgba(36,114,200,0.25)" stroke="rgba(36,114,200,0.5)" stroke-width="1.2"/>
+        <text x="325" y="87" text-anchor="middle" fill="white" font-size="9.5" font-weight="600">2.0</text>
+        <text x="325" y="101" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">Develop &amp; Manage</text>
+        <text x="325" y="113" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">Products &amp; Services</text>
+
+        <text x="402" y="93" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="12">&rsaquo;&rsaquo;</text>
+
+        <rect x="410" y="66" width="120" height="52" rx="7" fill="rgba(36,114,200,0.25)" stroke="rgba(36,114,200,0.5)" stroke-width="1.2"/>
+        <text x="470" y="87" text-anchor="middle" fill="white" font-size="9.5" font-weight="600">3.0</text>
+        <text x="470" y="101" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">Market &amp; Sell</text>
+        <text x="470" y="113" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">Products &amp; Services</text>
+
+        <text x="537" y="93" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="12">&rsaquo;&rsaquo;</text>
+
+        <rect x="545" y="66" width="120" height="52" rx="7" fill="rgba(36,114,200,0.25)" stroke="rgba(36,114,200,0.5)" stroke-width="1.2"/>
+        <text x="605" y="87" text-anchor="middle" fill="white" font-size="9.5" font-weight="600">4.0</text>
+        <text x="605" y="101" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">Deliver Products</text>
+        <text x="605" y="113" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">&amp; Services</text>
+
+        <text x="672" y="93" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="12">&rsaquo;&rsaquo;</text>
+
+        <rect x="680" y="66" width="120" height="52" rx="7" fill="rgba(36,114,200,0.25)" stroke="rgba(36,114,200,0.5)" stroke-width="1.2"/>
+        <text x="740" y="87" text-anchor="middle" fill="white" font-size="9.5" font-weight="600">5.0</text>
+        <text x="740" y="101" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">Manage Customer</text>
+        <text x="740" y="113" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8.5">Service</text>
+
+        <line x1="75" y1="138" x2="825" y2="138" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="5,4"/>
+
         <text x="450" y="158" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" letter-spacing="1.5" font-family="DM Mono, monospace">MANAGEMENT &amp; SUPPORT PROCESSES</text>
-        <!-- Support boxes row -->
-        <rect x="30" y="168" width="100" height="42" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="80" y="185" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="8.5" font-weight="600">6.0</text>
-        <text x="80" y="200" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.8">Human Capital</text>
-        <rect x="138" y="168" width="100" height="42" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="188" y="185" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="8.5" font-weight="600">7.0</text>
-        <text x="188" y="200" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.8">Financial Resources</text>
-        <rect x="246" y="168" width="100" height="42" rx="6" fill="rgba(36,114,200,0.2)" stroke="rgba(36,114,200,0.5)" stroke-width="1.2"/>
-        <text x="296" y="185" text-anchor="middle" fill="#F0C55A" font-size="8.5" font-weight="700">8.0 &starf;</text>
-        <text x="296" y="200" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="7.8">Manage IT</text>
-        <rect x="354" y="168" width="100" height="42" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="404" y="185" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="8.5" font-weight="600">9.0</text>
-        <text x="404" y="200" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.8">Manage Assets</text>
-        <rect x="462" y="168" width="100" height="42" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="512" y="185" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="8.5" font-weight="600">10.0</text>
-        <text x="512" y="200" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.8">Risk &amp; Compliance</text>
-        <rect x="570" y="168" width="100" height="42" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="620" y="185" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="8.5" font-weight="600">11.0</text>
-        <text x="620" y="200" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.8">External Relations</text>
-        <rect x="678" y="168" width="102" height="42" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="729" y="185" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="8.5" font-weight="600">12.0 / 13.0</text>
-        <text x="729" y="200" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.8">Capabilities &amp; Knowledge</text>
-        <!-- Source note -->
-        <text x="450" y="248" text-anchor="middle" fill="rgba(255,255,255,0.2)" font-size="8" font-family="DM Mono, monospace">Source: APQC Process Classification Framework &mdash; adapted from Orbus Software Quick Reference Guide</text>
+
+        <rect x="75" y="168" width="100" height="42" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="125" y="185" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="8.5" font-weight="600">6.0</text>
+        <text x="125" y="200" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.8">Human Capital</text>
+
+        <rect x="183" y="168" width="100" height="42" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="233" y="185" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="8.5" font-weight="600">7.0</text>
+        <text x="233" y="200" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.8">Financial Resources</text>
+
+        <rect x="291" y="168" width="100" height="42" rx="6" fill="rgba(36,114,200,0.2)" stroke="rgba(36,114,200,0.5)" stroke-width="1.2"/>
+        <text x="341" y="185" text-anchor="middle" fill="#F0C55A" font-size="8.5" font-weight="700">8.0 &starf;</text>
+        <text x="341" y="200" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="7.8">Manage IT</text>
+
+        <rect x="399" y="168" width="100" height="42" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="449" y="185" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="8.5" font-weight="600">9.0</text>
+        <text x="449" y="200" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.8">Manage Assets</text>
+
+        <rect x="507" y="168" width="100" height="42" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="557" y="185" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="8.5" font-weight="600">10.0</text>
+        <text x="557" y="200" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.8">Risk &amp; Compliance</text>
+
+        <rect x="615" y="168" width="100" height="42" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="665" y="185" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="8.5" font-weight="600">11.0</text>
+        <text x="665" y="200" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.8">External Relations</text>
+
+        <rect x="723" y="168" width="102" height="42" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="774" y="185" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="8.5" font-weight="600">12.0 / 13.0</text>
+        <text x="774" y="200" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.8">Capabilities &amp; Knowledge</text>
+
+        <text x="450" y="248" text-anchor="middle" fill="rgba(255,255,255,0.2)" font-size="8" font-family="DM Mono, monospace">Source: APQC Process Classification Framework</text>
       </svg>
     </div>
   </div>
 </section>
 
-<!-- FRAMEWORK STRUCTURE -->
 <section id="structure">
   <div class="container">
-    <div class="section-eyebrow reveal">02 &mdash; Framework Structure</div>
+    <div class="section-eyebrow reveal">02: Framework Structure</div>
     <h2 class="section-title reveal">How the PCF is Structured</h2>
-    <p class="section-lead reveal">The PCF uses a hierarchical parent-child decomposition &mdash; from broad categories down to granular tasks &mdash; enabling organizations to zoom in or out depending on their needs.</p>
+    <p class="section-lead reveal">The PCF uses a hierarchical parent-child decomposition from broad categories down to granular tasks, enabling organizations to zoom in or out depending on their needs.</p>
 
     <div class="structure-cols">
       <div class="hierarchy-wrap reveal">
         <h3>The Five Levels</h3>
-        <!-- Hierarchy diagram SVG -->
-        <svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;margin-bottom:1.1rem;" font-family="DM Sans, system-ui, sans-serif">
-          <!-- Level bars -->
+        <svg viewBox="0 0 460 210" xmlns="http://www.w3.org/2000/svg" style="width:100%;margin-bottom:1.1rem;" font-family="DM Sans, system-ui, sans-serif">
           <rect x="0" y="10" width="440" height="28" rx="6" fill="rgba(212,168,67,0.15)" stroke="rgba(212,168,67,0.4)" stroke-width="1"/>
           <rect x="0" y="0" width="3" height="48" rx="2" fill="#D4A843"/>
           <text x="14" y="28" fill="#D4A843" font-size="9.5" font-weight="600" font-family="DM Mono, monospace">LEVEL 1</text>
           <text x="80" y="28" fill="white" font-size="10" font-weight="600">Category</text>
           <text x="380" y="28" text-anchor="end" fill="rgba(255,255,255,0.4)" font-size="9" font-family="DM Mono, monospace">e.g. 8.0</text>
-          <text x="14" y="48" fill="rgba(255,255,255,0.35)" font-size="8.5">Represents the highest level &mdash; e.g. Manage Information Technology</text>
+          <text x="14" y="48" fill="rgba(255,255,255,0.35)" font-size="8.5">Represents the highest level: e.g. Manage Information Technology</text>
 
           <rect x="20" y="62" width="420" height="26" rx="6" fill="rgba(74,158,232,0.12)" stroke="rgba(74,158,232,0.35)" stroke-width="1"/>
           <rect x="20" y="62" width="3" height="26" rx="2" fill="#4A9EE8"/>
@@ -585,7 +588,7 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
         </svg>
         <div class="id-box">
           <div class="id-box-title">PCF ID vs. Hierarchy ID</div>
-          <div class="id-box-text"><strong style="color:var(--gold2);">5-digit PCF ID</strong> &mdash; permanent, like a Social Security Number. Never changes even if you rename or restructure elements. Always retain this for benchmarking.<br><br><strong style="color:var(--gold2);">Hierarchy ID</strong> (e.g., 8.1.2) &mdash; flexible, like a driver's license number. Changes when you customize the framework. The PCF ID ensures the link back to APQC's research is never lost.</div>
+          <div class="id-box-text"><strong style="color:var(--gold2);">5-digit PCF ID:</strong> permanent, like a Social Security Number. Never changes even if you rename or restructure elements. Always retain this for benchmarking.<br><br><strong style="color:var(--gold2);">Hierarchy ID:</strong> (e.g., 8.1.2) flexible, like a driver's license number. Changes when you customize the framework. The PCF ID ensures the link back to APQC's research is never lost.</div>
         </div>
       </div>
       <div class="versions-side reveal">
@@ -603,21 +606,19 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold2)" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
             </div>
             <div class="ver-card-title">Industry-Specific</div>
-            <div class="ver-card-text"><strong style="color:var(--gold2);">21+ versions</strong> &mdash; Banking, Retail, Airline, Healthcare, Automotive, Pharmaceutical, and more. Front-office processes differ; back-office support stays the same.</div>
+            <div class="ver-card-text"><strong style="color:var(--gold2);">21+ versions:</strong> Banking, Retail, Airline, Healthcare, Automotive, Pharmaceutical, and more. Front-office processes differ; back-office support stays the same.</div>
           </div>
         </div>
         <div class="example-note">
           <div class="example-note-label">Example: MECE in Practice</div>
-          <div class="example-note-text">An IT process used by the HR department still belongs under Category 8.0 (Manage IT). Do not duplicate it into the HR category &mdash; reference it from there. This keeps the taxonomy clean and benchmarkable across organizations.</div>
+          <div class="example-note-text">An IT process used by the HR department still belongs under Category 8.0 (Manage IT). Do not duplicate it into the HR category: reference it from there. This keeps the taxonomy clean and benchmarkable across organizations.</div>
         </div>
         <div style="margin-top:1rem;">
-          <!-- Versions diagram -->
           <svg viewBox="0 0 380 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:10px;overflow:hidden;" font-family="DM Sans, system-ui, sans-serif">
             <rect width="380" height="130" fill="rgba(255,255,255,0.04)"/>
             <text x="190" y="22" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="9" font-family="DM Mono, monospace" letter-spacing="1.5">PCF VERSION NUMBER SCHEME</text>
             <rect x="20" y="34" width="340" height="32" rx="6" fill="rgba(26,84,148,0.3)" stroke="rgba(26,84,148,0.5)" stroke-width="1"/>
-            <text x="190" y="55" text-anchor="middle" fill="white" font-size="11" font-weight="700" font-family="DM Mono, monospace">Version 8.0 &mdash; en &mdash; XI</text>
-            <!-- labels -->
+            <text x="190" y="55" text-anchor="middle" fill="white" font-size="11" font-weight="700" font-family="DM Mono, monospace">Version 8.0 - en - XI</text>
             <line x1="80" y1="66" x2="80" y2="84" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
             <text x="80" y="96" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="8.5">Major version</text>
             <line x1="190" y1="66" x2="190" y2="84" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
@@ -630,10 +631,8 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
       </div>
     </div>
 
-    <!-- CATEGORIES -->
     <div class="cat-section reveal">
-      <div class="cat-section-title">The 13 Top-Level Categories &mdash; Click any for details</div>
-      <!-- Operating row -->
+      <div class="cat-section-title">The 13 Top-Level Categories (Click any for details)</div>
       <div style="margin-bottom:.5rem;font-family:var(--font-mono);font-size:.65rem;color:rgba(255,255,255,.35);letter-spacing:.12em;text-transform:uppercase;">Operating Processes</div>
       <div class="cat-operating">
         <div class="cat-pill" style="flex:1;min-width:120px;" onclick="openModal('cat1')"><div class="cat-pill-num">1.0</div><div class="cat-pill-name">Develop Vision and Strategy</div><span class="cat-pill-type">Operating</span></div>
@@ -658,7 +657,6 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
   </div>
 </section>
 
-<!-- CATEGORY MODALS -->
 <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
   <div class="modal" id="modal-box">
     <button class="modal-close" onclick="closeModalBtn()">
@@ -673,16 +671,15 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
   </div>
 </div>
 
-<!-- IT COMPONENT -->
 <section id="it-component">
   <div class="container">
-    <div class="section-eyebrow reveal">03 &mdash; IT Management Component</div>
+    <div class="section-eyebrow reveal">03: IT Management Component</div>
     <h2 class="section-title reveal">IT in the PCF</h2>
-    <p class="section-lead reveal">Category 8.0 &mdash; Manage Information Technology &mdash; is the PCF's dedicated IT category. But IT does not stop there: it acts as an enabler across every category in the framework.</p>
+    <p class="section-lead reveal">Category 8.0 (Manage Information Technology) is the PCF's dedicated IT category. But IT does not stop there: it acts as an enabler across every category in the framework.</p>
 
     <div class="it-grid">
       <div class="reveal">
-        <div style="font-family:var(--font-display);font-size:1.05rem;font-weight:600;color:var(--text);margin-bottom:.9rem;">Category 8.0 &mdash; Process Groups</div>
+        <div style="font-family:var(--font-display);font-size:1.05rem;font-weight:600;color:var(--text);margin-bottom:.9rem;">Category 8.0: Process Groups</div>
         <div class="it-groups">
           <div class="it-group">
             <div class="it-group-lbl">IT Strategy &amp; Governance</div>
@@ -702,10 +699,9 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
           <div class="it-group">
             <div class="it-group-lbl">IT Service Management</div>
             <div class="it-group-title">Develop Relationships &middot; Manage Information &middot; Manage Support</div>
-            <div class="it-group-text">Covers ongoing operation and maintenance of IT services after deployment &mdash; including support, information governance, and resilience.</div>
+            <div class="it-group-text">Covers ongoing operation and maintenance of IT services after deployment: including support, information governance, and resilience.</div>
           </div>
         </div>
-        <!-- IT Category diagram -->
         <svg viewBox="0 0 400 110" xmlns="http://www.w3.org/2000/svg" style="width:100%;margin-top:1rem;border-radius:10px;" font-family="DM Sans, system-ui, sans-serif">
           <rect width="400" height="110" rx="10" fill="rgba(11,25,41,0.9)" stroke="rgba(36,114,200,0.3)" stroke-width="1"/>
           <text x="200" y="20" text-anchor="middle" fill="#F0C55A" font-size="10" font-weight="700" font-family="DM Mono, monospace" letter-spacing="1">8.0 MANAGE INFORMATION TECHNOLOGY</text>
@@ -721,7 +717,7 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
           <rect x="291" y="30" width="97" height="34" rx="5" fill="rgba(36,114,200,0.2)" stroke="rgba(36,114,200,0.4)" stroke-width="1"/>
           <text x="339" y="47" text-anchor="middle" fill="white" font-size="8" font-weight="600">Manage</text>
           <text x="339" y="58" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="7.5">Support &amp; Info</text>
-          <text x="200" y="90" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-size="7.5" font-family="DM Mono, monospace">Source: APQC PCF v8.0 &mdash; Category 8.0 Manage Information Technology</text>
+          <text x="200" y="90" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-size="7.5" font-family="DM Mono, monospace">Source: APQC PCF v8.0: Category 8.0 Manage Information Technology</text>
         </svg>
       </div>
       <div class="reveal">
@@ -733,46 +729,45 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
               <div class="it-item-icon icon">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>
               </div>
-              <div><strong>Data &amp; Analytics</strong> &mdash; inform decision-making across all operating categories (1&ndash;5)</div>
+              <div><strong>Data &amp; Analytics:</strong> inform decision-making across all operating categories (1-5)</div>
             </div>
             <div class="it-item">
               <div class="it-item-icon icon">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
               </div>
-              <div><strong>ERP &amp; CRM Systems</strong> &mdash; automate and integrate core operations in Deliver (4.0) and Market &amp; Sell (3.0)</div>
+              <div><strong>ERP &amp; CRM Systems:</strong> automate and integrate core operations in Deliver (4.0) and Market &amp; Sell (3.0)</div>
             </div>
             <div class="it-item">
               <div class="it-item-icon icon">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
               </div>
-              <div><strong>Collaboration Platforms</strong> &mdash; connect people across HR (6.0) and Customer Service (5.0)</div>
+              <div><strong>Collaboration Platforms:</strong> connect people across HR (6.0) and Customer Service (5.0)</div>
             </div>
             <div class="it-item">
               <div class="it-item-icon icon">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               </div>
-              <div><strong>Security &amp; Compliance Tools</strong> &mdash; protect assets across Risk &amp; Compliance (10.0)</div>
+              <div><strong>Security &amp; Compliance Tools:</strong> protect assets across Risk &amp; Compliance (10.0)</div>
             </div>
             <div class="it-item">
               <div class="it-item-icon icon">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93A10 10 0 0 0 4.93 19.07"/><path d="M4.93 4.93A10 10 0 0 1 19.07 19.07"/></svg>
               </div>
-              <div><strong>Automation &amp; AI</strong> &mdash; require standardized process documentation that the PCF provides before deployment</div>
+              <div><strong>Automation &amp; AI:</strong> require standardized process documentation that the PCF provides before deployment</div>
             </div>
           </div>
         </div>
         <div class="it-insight">
-          <div class="it-insight-text"><strong>Key insight:</strong> Without IT, the processes classified in the PCF would be significantly slower, more error-prone, and harder to benchmark. <em>IT converts the PCF's taxonomy into operational reality</em> &mdash; allowing organizations to execute, monitor, and continuously improve the processes the framework describes.</div>
+          <div class="it-insight-text"><strong>Key insight:</strong> Without IT, the processes classified in the PCF would be significantly slower, more error-prone, and harder to benchmark. <em>IT converts the PCF's taxonomy into operational reality:</em> allowing organizations to execute, monitor, and continuously improve the processes the framework describes.</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- LEARNING PATH -->
 <section id="path">
   <div class="container">
-    <div class="section-eyebrow reveal">04 &mdash; Learning Path</div>
+    <div class="section-eyebrow reveal">04: Learning Path</div>
     <h2 class="section-title reveal">Your PCF Learning Journey</h2>
     <p class="section-lead reveal">Follow these four steps to go from zero to confident with the APQC-PCF. All resources are free and linked throughout this toolkit.</p>
     <div class="path-steps" style="margin-top:3.5rem;">
@@ -784,7 +779,7 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
           </div>
         </div>
         <div class="path-title">Watch the Playlist</div>
-        <div class="path-text">Start with Course 1 &mdash; three official APQC videos covering the PCF from introduction to real-world application to governance methodology.</div>
+        <div class="path-text">Start with Course 1: three official APQC videos covering the PCF from introduction to real-world application to governance methodology.</div>
         <a href="#courses" class="path-cta">Go to Courses &rarr;</a>
       </div>
       <div class="path-step reveal">
@@ -795,7 +790,7 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
           </div>
         </div>
         <div class="path-title">Read the Guide</div>
-        <div class="path-text">Read Course 2 &mdash; the Orbus Software Quick Reference Guide. Category-by-category descriptions with visual diagrams for all categories.</div>
+        <div class="path-text">Read Course 2: the Orbus Software Quick Reference Guide. Category-by-category descriptions with visual diagrams for all categories.</div>
         <a href="#courses" class="path-cta">Go to Course 2 &rarr;</a>
       </div>
       <div class="path-step reveal">
@@ -824,14 +819,12 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
   </div>
 </section>
 
-<!-- COURSES -->
 <section id="courses">
   <div class="container">
-    <div class="section-eyebrow reveal">05 &mdash; Online Courses</div>
+    <div class="section-eyebrow reveal">05: Online Courses</div>
     <h2 class="section-title reveal">Evaluated Learning Resources</h2>
-    <p class="section-lead reveal">Two resources were evaluated &mdash; an official APQC video playlist, and a third-party quick reference guide. Watch and read in order for the best experience.</p>
+    <p class="section-lead reveal">Two key resources were evaluated to determine their suitability as learning materials: an official APQC video playlist and a third-party quick reference guide. These resources should be reviewed in sequence.</p>
 
-    <!-- Course 1 -->
     <div style="margin-top:3rem;">
       <div class="course-label-row reveal">
         <span class="course-num-badge">COURSE 1</span>
@@ -842,12 +835,12 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
         <div class="video-card reveal">
           <div class="video-embed">
             <div class="video-unlisted-note">
-              <span>Video may be unlisted or restricted &mdash;<br>open directly in YouTube if not loading</span>
+              <span>Video may be unlisted or restricted:<br>open directly in YouTube if not loading</span>
             </div>
             <iframe src="https://www.youtube.com/embed/--mO-dAC28s" allowfullscreen loading="lazy" title="Intro to APQC's Process Classification Framework" style="position:absolute;inset:0;width:100%;height:100%;border:none;z-index:1;"></iframe>
           </div>
           <div class="video-body">
-            <div class="video-part-badge">Part 1 &middot; Start Here</div>
+            <div class="video-part-badge">Part 1: Start Here</div>
             <div class="video-title">Intro to APQC's Process Classification Framework (PCF)&reg;</div>
             <div class="video-desc">Presented by Jonathan Kraft (Manager, Open Standards Benchmarking). A foundational walkthrough of what the PCF is, how to access it on apqc.org, how to navigate its hierarchical structure, and how to read process definitions. Includes a live demo of Category 8 in the Excel file and explains the difference between cross-industry and industry-specific versions.</div>
             <div class="video-tags"><span class="video-tag">Beginner</span><span class="video-tag">Official APQC</span><span class="video-tag">Framework Structure</span><span class="video-tag">PCF IDs</span><span class="video-tag">Free</span></div>
@@ -855,39 +848,38 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
         </div>
         <div class="video-card reveal">
           <div class="video-embed">
-            <div class="video-unlisted-note"><span>Video may be unlisted &mdash; open in YouTube if not loading</span></div>
+            <div class="video-unlisted-note"><span>Video may be unlisted: open in YouTube if not loading</span></div>
             <iframe src="https://www.youtube.com/embed/8FaEFSNcnHs" allowfullscreen loading="lazy" title="PCF Case Studies" style="position:absolute;inset:0;width:100%;height:100%;border:none;z-index:1;"></iframe>
           </div>
           <div class="video-body">
-            <div class="video-part-badge">Part 2 &middot; Real-World Applications</div>
+            <div class="video-part-badge">Part 2: Real-World Applications</div>
             <div class="video-title">PCF Case Studies: How Organizations Use the Process Classification Framework</div>
-            <div class="video-desc">Covers five real-world use cases: organizational transformation (Elevations Credit Union &mdash; Baldrige Award 2014), process improvement (Sword Group, HP), ERP implementation (Pearson), content management (University of North Texas), and end-to-end process mapping and RPA enablement (CMI, Arla Foods).</div>
+            <div class="video-desc">Covers five real-world use cases: organizational transformation (Elevations Credit Union - Baldrige Award 2014), process improvement (Sword Group, HP), ERP implementation (Pearson), content management (University of North Texas), and end-to-end process mapping and RPA enablement (CMI, Arla Foods).</div>
             <div class="video-tags"><span class="video-tag">Intermediate</span><span class="video-tag">Official APQC</span><span class="video-tag">5 Use Cases</span><span class="video-tag">Case Studies</span><span class="video-tag">Free</span></div>
           </div>
         </div>
         <div class="video-card reveal">
           <div class="video-embed">
-            <div class="video-unlisted-note"><span>Video may be unlisted &mdash; open in YouTube if not loading</span></div>
+            <div class="video-unlisted-note"><span>Video may be unlisted: open in YouTube if not loading</span></div>
             <iframe src="https://www.youtube.com/embed/5lDYhVvyY2U" allowfullscreen loading="lazy" title="Framing Frameworks: Process Discovery and Standardization" style="position:absolute;inset:0;width:100%;height:100%;border:none;z-index:1;"></iframe>
           </div>
           <div class="video-body">
-            <div class="video-part-badge">Part 3 &middot; Deep Dive</div>
+            <div class="video-part-badge">Part 3: Deep Dive</div>
             <div class="video-title">Framing Frameworks: Process Discovery &amp; Standardization</div>
             <div class="video-desc">APQC webinar hosted by Rick McCarthy, Melissa Kerpel, and Holly Lyke-Ho-Gland. Covers three discovery methodologies (interview, workshop, survey), five governance pillars for standardization, and a live practitioner Q&amp;A with organizations including ATB Financial, the US Marine Corps, and ServiceNow.</div>
             <div class="video-tags"><span class="video-tag">Advanced</span><span class="video-tag">Official APQC</span><span class="video-tag">Discovery</span><span class="video-tag">Governance</span><span class="video-tag">Webinar</span><span class="video-tag">Free</span></div>
           </div>
         </div>
       </div>
-      <div class="eval-strip reveal" style="margin-top:1.2rem;">
-        <div class="eval-strip-label">Course 1 &mdash; Group Evaluation</div>
-        <div class="eval-strip-row">
-          <div class="eval-score"><span class="eval-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 28 / 30</div>
-          <div class="eval-note">Highest credibility &mdash; produced directly by APQC. Three parts form a natural learning progression from fundamentals through application to implementation methodology.</div>
-        </div>
+
+      <div class="eval-strip reveal" style="margin-top:1.5rem;">
+        <div class="eval-strip-title">Course 1 Evaluation Report</div>
+        <div class="eval-strip-text"><strong>Overview:</strong> This 3-video playlist serves as a high-level introduction by APQC, bridging the theoretical concepts of the PCF with practical, real-world business cases. The videos range from the history of the PCF and the MECE principle to deep dives into real organizations like Pearson, University of North Texas, and Elevations Credit Union.</div>
+        <div class="eval-strip-text"><strong>Strengths:</strong> The videos offer a logical learning flow, explaining the framework's hierarchical nature clearly while emphasizing ease of use (e.g., the 5-digit PCF ID). Real-world examples make the content highly practical. Additionally, it highlights the 5 Pillars of Framework Governance (Ownership, Scope, Standardization, Change Control, Accessibility &amp; Adoption).</div>
+        <div class="eval-strip-text"><strong>Limitations:</strong> The playlist prioritizes breadth over depth. While it introduces the framework successfully, it does not break down the specific processes present in the actual Excel spreadsheet. Viewers are left to explore the spreadsheet themselves without specific guidance or interactive "situationers" on how to apply the PCF to their own unique use case.</div>
       </div>
     </div>
 
-    <!-- Course 2 -->
     <div style="margin-top:3rem;">
       <div class="course-label-row reveal">
         <span class="course-num-badge">COURSE 2</span>
@@ -899,47 +891,78 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
           <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--gold2)" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
         </div>
         <div>
-          <div class="course2-badge">Orbus Software &middot; 2014</div>
+          <div class="course2-badge">Orbus Software (2014)</div>
           <div class="course2-title">Quick Reference Guide: APQC Process Classification Framework v6.1.0</div>
-          <div class="course2-desc">Authored by David Jones and Roderick Brown &mdash; Enterprise Architecture and Business Architecture specialists. Provides a structured written reference for all PCF categories with visual Visio-style diagrams, explanations of the Process Element Number Scheme, and practical guidance on using the PCF for benchmarking, project scoping, and repository structuring.<br><br><em style="color:rgba(255,255,255,.35);font-size:.78rem;">Note: Published for PCF v6.1.0 (2014). Current version is v8.0 &mdash; core structure and principles remain accurate.</em></div>
+          <div class="course2-desc">Authored by David Jones and Roderick Brown, Enterprise Architecture specialists. Provides a structured 10-page written reference for the PCF categories with Visio-style diagrams, explanations of the Process Element Number Scheme, and practical guidance on using the PCF for benchmarking, project scoping, and repository structuring.<br><br><em style="color:rgba(255,255,255,.35);font-size:.78rem;">Note: Published for PCF v6.1.0 (2014). Current version is v8.0: core structure and principles remain accurate.</em></div>
           <a href="https://www.orbussoftware.com/resources/research-library/resource/quick-reference-guide-apqc-process-classification-framework" target="_blank" class="course2-link">
             Access at Orbus Software
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
           </a>
         </div>
       </div>
-      <div class="eval-strip reveal" style="margin-top:1rem;">
-        <div class="eval-strip-label">Course 2 &mdash; Group Evaluation</div>
-        <div class="eval-strip-row">
-          <div class="eval-score"><span class="eval-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 27 / 30</div>
-          <div class="eval-note">Excellent written complement to the video playlist. Strong visual diagrams and category-level detail. Slightly dated version but content remains highly relevant.</div>
-        </div>
+      <div class="eval-strip reveal" style="margin-top:1.5rem;">
+        <div class="eval-strip-title">Course 2 Evaluation Report</div>
+        <div class="eval-strip-text"><strong>Overview:</strong> A 10-page PDF guide authored by Enterprise Architecture consultants David Jones and Roderick Brown. This document provides a comprehensive introduction to the PCF, establishing strong credibility by emphasizing the framework's history, its structural elements, and the process element numbering scheme.</div>
+        <div class="eval-strip-text"><strong>Strengths:</strong> The document excels in explaining the structural hierarchy of the PCF (Category &rarr; Process Group &rarr; Process &rarr; Activity &rarr; Task). It provides a detailed breakdown of the 12 high-level categories (as of v6.1.0) and uses clear Visio diagrams. It also heavily emphasizes practical application, demonstrating how the PCF can be used as a checklist for process scoping, repository structures, and benchmarking baselines.</div>
+        <div class="eval-strip-text"><strong>Limitations:</strong> As a static document, it lacks interactivity and guided instruction, which can pose a barrier to beginners. It assumes prior knowledge of business process management and enterprise architecture. The diagrams, while useful, have brief explanations requiring the reader to interpret them independently. Finally, it lacks step-by-step examples for application.</div>
       </div>
     </div>
 
-    <!-- Eval table -->
     <div class="eval-table-wrap reveal">
       <div class="eval-table-title">Evaluation Criteria Breakdown</div>
       <table class="eval-table">
-        <thead><tr><th>Criterion</th><th>Course 1 &middot; Playlist</th><th>Course 2 &middot; Reference Guide</th></tr></thead>
+        <thead>
+          <tr>
+            <th>Criteria</th>
+            <th>Orbus Software Quick Reference Guide</th>
+            <th>APQC YouTube Playlist</th>
+          </tr>
+        </thead>
         <tbody>
-          <tr><td>Content Depth &amp; Accuracy</td><td><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5/5</td><td><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4/5</td></tr>
-          <tr><td>Clarity &amp; Accessibility</td><td><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4/5</td><td><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5/5</td></tr>
-          <tr><td>Practical Applicability</td><td><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5/5</td><td><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4/5</td></tr>
-          <tr><td>Production Quality</td><td><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4/5</td><td><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5/5</td></tr>
-          <tr><td>Source Credibility</td><td><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5/5</td><td><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4/5</td></tr>
-          <tr><td>Reusability as Learning Resource</td><td><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5/5</td><td><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5/5</td></tr>
-          <tr class="total-row"><td>Total</td><td>28 / 30</td><td>27 / 30</td></tr>
+          <tr>
+            <td>Format</td>
+            <td>Written guide (PDF, 10 pages)</td>
+            <td>1 hour and 30 min. long video series (3 Youtube videos)</td>
+          </tr>
+          <tr>
+            <td>Cost</td>
+            <td>Free</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>Content Depth / Version / Visual Aids</td>
+            <td>Introductory to intermediate; covers PCF structure, hierarchy, number scheme, all 12 categories.<br><br>Based on PCF v6.1.0 (2014); older version, not current (v8.0).<br><br>Diagrams, PCF hierarchy charts, excel screenshots.</td>
+            <td>Introductory to intermediate; covers PCF overview, navigation, and use cases.<br><br>Reflects current PCF practices (regularly updated channel).<br><br>Screen recordings, slides, live demos.</td>
+          </tr>
+          <tr>
+            <td>Credibility / Source</td>
+            <td>Authored by Enterprise Architecture consultants (David Jones, Roderick Brown); published by Orbus Software.</td>
+            <td>Official APQC content (highest authority).</td>
+          </tr>
+          <tr>
+            <td>Learning Style Suitability</td>
+            <td>Best for readers and reference-seekers.</td>
+            <td>Best for visual/auditory learners.</td>
+          </tr>
+          <tr>
+            <td>Practical Application</td>
+            <td>Provides a checklist, process repository structure, and benchmarking foundation guidance.</td>
+            <td>Shows how to access and apply the PCF in real scenarios.</td>
+          </tr>
+          <tr>
+            <td>Recommended for</td>
+            <td>Supplementary reading for structural understanding.</td>
+            <td>First-time learners needing a guided walkthrough.</td>
+          </tr>
         </tbody>
       </table>
     </div>
   </div>
 </section>
 
-<!-- CASE STUDIES -->
 <section id="cases">
   <div class="container">
-    <div class="section-eyebrow reveal">06 &mdash; Case Studies</div>
+    <div class="section-eyebrow reveal">06: Case Studies</div>
     <h2 class="section-title reveal">PCF in the Real World</h2>
     <p class="section-lead reveal">From Course 1 Part 2: five use cases with real organizations that deployed the PCF, each illustrating a different dimension of what the framework can do.</p>
     <div class="cases-tabs reveal">
@@ -952,27 +975,27 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
 
     <div id="case-transform" class="case-panel active">
       <div>
-        <div class="case-chip">Use Case 1 &middot; Transformation</div>
+        <div class="case-chip">Use Case 1: Transformation</div>
         <div class="case-lbl">Organization</div>
         <div class="case-title">Elevations Credit Union</div>
         <div class="case-org-tag">Banking PCF</div>
-        <div class="case-body">In 2008, a new CEO arrived with a mandate to transform Elevations CU into a more efficient, standardized organization &mdash; with the ultimate goal of winning the Malcolm Baldrige National Quality Award.<br><br>The process improvement team used the Banking PCF as the foundation for a three-phase transformation spanning several years.</div>
+        <div class="case-body">In 2008, a new CEO arrived with a mandate to transform Elevations CU into a more efficient, standardized organization with the ultimate goal of winning the Malcolm Baldrige National Quality Award.<br><br>The process improvement team used the Banking PCF as the foundation for a three-phase transformation spanning several years.</div>
       </div>
       <div class="outcomes">
-        <div class="outcome"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 13h6M9 17h4"/></svg></div><div><div class="outcome-text">Phase 1: Current State Survey</div><div class="outcome-sub">Converted the Banking PCF into a department survey (Level 3). Teams rated each process 1&ndash;5 on maturity, mapping the full "as-is" state.</div></div></div>
-        <div class="outcome"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div><div class="outcome-text">Phase 2: Gap Workshop</div><div class="outcome-sub">PCF sections blown up on walls; color-coded notes identified gaps. Cross-functional teams built the "to-be" map collaboratively &mdash; increasing buy-in and engagement.</div></div></div>
-        <div class="outcome"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div><div class="outcome-text">Phase 3: BPM Tracking Tool</div><div class="outcome-sub">Customized PCF loaded into a BPM tool with scorecards, SIPOCs, process owners, and KPIs &mdash; enabling ongoing transformation tracking.</div></div></div>
+        <div class="outcome"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 13h6M9 17h4"/></svg></div><div><div class="outcome-text">Phase 1: Current State Survey</div><div class="outcome-sub">Converted the Banking PCF into a department survey (Level 3). Teams rated each process 1-5 on maturity, mapping the full "as-is" state.</div></div></div>
+        <div class="outcome"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div><div class="outcome-text">Phase 2: Gap Workshop</div><div class="outcome-sub">PCF sections blown up on walls; color-coded notes identified gaps. Cross-functional teams built the "to-be" map collaboratively: increasing buy-in and engagement.</div></div></div>
+        <div class="outcome"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div><div class="outcome-text">Phase 3: BPM Tracking Tool</div><div class="outcome-sub">Customized PCF loaded into a BPM tool with scorecards, SIPOCs, process owners, and KPIs: enabling ongoing transformation tracking.</div></div></div>
         <div class="outcome highlight"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div><div class="outcome-text">Won the Malcolm Baldrige Award in 2014</div><div class="outcome-sub">One of APQC's most cited case studies. Some organizations give it to new hires as required reading on their first day.</div></div></div>
       </div>
     </div>
 
     <div id="case-improve" class="case-panel">
       <div>
-        <div class="case-chip">Use Case 2 &middot; Process Improvement</div>
+        <div class="case-chip">Use Case 2: Process Improvement</div>
         <div class="case-lbl">Organizations</div>
         <div class="case-title">Sword Group &amp; Hewlett-Packard</div>
         <div class="case-org-tag">Cross-Industry PCF</div>
-        <div class="case-body">Two organizations used the PCF's Level 1 categories to systematically assess and prioritize improvement projects &mdash; replacing gut-feel decisions with a structured, data-driven approach across five maturity dimensions.</div>
+        <div class="case-body">Two organizations used the PCF's Level 1 categories to systematically assess and prioritize improvement projects: replacing gut-feel decisions with a structured, data-driven approach across five maturity dimensions.</div>
       </div>
       <div class="outcomes">
         <div class="outcome"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><div><div class="outcome-text">Sword Group: Maturity Assessment Scorecard</div><div class="outcome-sub">Scored each PCF category on Process Maturity, Business Contribution, Business Alignment, Accountability, and Performance Measurement. Plotted on a 2x2 matrix (value vs. feasibility) to prioritize projects.</div></div></div>
@@ -982,22 +1005,22 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
 
     <div id="case-erp" class="case-panel">
       <div>
-        <div class="case-chip">Use Case 3 &middot; ERP / Technology Adoption</div>
+        <div class="case-chip">Use Case 3: ERP / Technology Adoption</div>
         <div class="case-lbl">Organization</div>
         <div class="case-title">Pearson</div>
         <div class="case-org-tag">Finance Process Standardization</div>
-        <div class="case-body">Three global regions, three separate ERP implementations, three consulting teams. Pearson needed to consolidate into a single ERP &mdash; but two regional teams resisted standardization, believing their processes were unique.</div>
+        <div class="case-body">Three global regions, three separate ERP implementations, three consulting teams. Pearson needed to consolidate into a single ERP, but two regional teams resisted standardization, believing their processes were unique.</div>
       </div>
       <div class="outcomes">
-        <div class="outcome"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div><div class="outcome-text">PCF as Neutral Common Language</div><div class="outcome-sub">Used in cross-regional workshops as an objective third-party reference &mdash; anchoring all discussions to a shared standard and removing "our way vs. your way" dynamics.</div></div></div>
-        <div class="outcome"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><div><div class="outcome-text">Record-to-Report Consolidation</div><div class="outcome-sub">Two regions had 27 processes for Record-to-Report. After PCF-guided workshops, they consolidated to 21 &mdash; reducing redundancy and complexity.</div></div></div>
+        <div class="outcome"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div><div class="outcome-text">PCF as Neutral Common Language</div><div class="outcome-sub">Used in cross-regional workshops as an objective third-party reference: anchoring all discussions to a shared standard and removing "our way vs. your way" dynamics.</div></div></div>
+        <div class="outcome"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><div><div class="outcome-text">Record-to-Report Consolidation</div><div class="outcome-sub">Two regions had 27 processes for Record-to-Report. After PCF-guided workshops, they consolidated to 21: reducing redundancy and complexity.</div></div></div>
         <div class="outcome green"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="1.8"><polyline points="20 6 9 17 4 12"/></svg></div><div><div class="outcome-text">Outcome: Single Unified ERP Rollout</div><div class="outcome-sub">One finance process view across all three regions. A common process language made previously irreconcilable approaches alignable.</div></div></div>
       </div>
     </div>
 
     <div id="case-content" class="case-panel">
       <div>
-        <div class="case-chip">Use Case 4 &middot; Content Management</div>
+        <div class="case-chip">Use Case 4: Content Management</div>
         <div class="case-lbl">Organization</div>
         <div class="case-title">University of North Texas System</div>
         <div class="case-org-tag">Shared Services Consolidation</div>
@@ -1005,14 +1028,14 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
       </div>
       <div class="outcomes">
         <div class="outcome"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div><div><div class="outcome-text">PCF as SOP Taxonomy</div><div class="outcome-sub">Used as the organizing backbone for the SOP document repository. SOPs tagged to PCF process elements in a drill-down structure: Category &rarr; Process Group &rarr; Process &rarr; SOPs.</div></div></div>
-        <div class="outcome"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div><div class="outcome-text">Dual-Screen Workflow</div><div class="outcome-sub">Finance staff now work with the repository on one screen and their transaction system on the other &mdash; all procedures available in the flow of work.</div></div></div>
-        <div class="outcome"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><div><div class="outcome-text">Gateway to Improvement</div><div class="outcome-sub">The repository surfaced overlapping SOPs across campuses &mdash; creating visibility into improvement opportunities. A similar approach helped another organization pass an ISO audit.</div></div></div>
+        <div class="outcome"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div><div class="outcome-text">Dual-Screen Workflow</div><div class="outcome-sub">Finance staff now work with the repository on one screen and their transaction system on the other: all procedures available in the flow of work.</div></div></div>
+        <div class="outcome"><div class="outcome-icon icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><div><div class="outcome-text">Gateway to Improvement</div><div class="outcome-sub">The repository surfaced overlapping SOPs across campuses: creating visibility into improvement opportunities. A similar approach helped another organization pass an ISO audit.</div></div></div>
       </div>
     </div>
 
     <div id="case-e2e" class="case-panel">
       <div>
-        <div class="case-chip">Use Case 5 &middot; End-to-End &amp; RPA</div>
+        <div class="case-chip">Use Case 5: End-to-End &amp; RPA</div>
         <div class="case-lbl">Organizations</div>
         <div class="case-title">CMI &amp; Arla Foods</div>
         <div class="case-org-tag">Digital Transformation</div>
@@ -1027,36 +1050,35 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
   </div>
 </section>
 
-<!-- SAM -->
 <section id="sam">
   <div class="container">
-    <div class="section-eyebrow reveal">07 &mdash; Strategic Alignment</div>
+    <div class="section-eyebrow reveal">07: Strategic Alignment</div>
     <h2 class="section-title reveal">PCF &amp; the Strategic Alignment Model</h2>
-    <p class="section-lead reveal">Connecting the APQC-PCF to the Strategic Alignment Model (Henderson &amp; Venkatraman, 1989) &mdash; showing how a process framework bridges business and IT strategy at every level.</p>
+    <p class="section-lead reveal">Connecting the APQC-PCF to the Strategic Alignment Model (Henderson &amp; Venkatraman, 1989): showing how a process framework bridges business and IT strategy at every level.</p>
 
     <div class="sam-cols">
       <div class="reveal">
-        <div style="font-size:.82rem;color:var(--muted);margin-bottom:.75rem;">Henderson &ndash; Venkatraman Strategic Alignment Model (1989)</div>
+        <div style="font-size:.82rem;color:var(--muted);margin-bottom:.75rem;">Henderson &amp; Venkatraman Strategic Alignment Model (1989)</div>
         <div class="sam-quad-grid">
-          <div class="sq sq-bs"><div class="sq-lbl">Business &middot; External</div><div class="sq-title">Business Strategy</div><div class="sq-text">Scope, distinctive competencies, business governance</div><div class="sq-pcf">PCF: Categories 1&ndash;5 (Operating)</div></div>
+          <div class="sq sq-bs"><div class="sq-lbl">Business &middot; External</div><div class="sq-title">Business Strategy</div><div class="sq-text">Scope, distinctive competencies, business governance</div><div class="sq-pcf">PCF: Categories 1-5 (Operating)</div></div>
           <div class="sq sq-it"><div class="sq-lbl">I/T &middot; External</div><div class="sq-title">I/T Strategy</div><div class="sq-text">Technology scope, IT governance, distinctive competencies</div><div class="sq-pcf">PCF: Category 8.0 (Manage IT)</div></div>
-          <div class="sq sq-org"><div class="sq-lbl">Business &middot; Internal</div><div class="sq-title">Organizational Infrastructure</div><div class="sq-text">Administrative infrastructure, processes, skills</div><div class="sq-pcf">PCF: Categories 6, 7, 9&ndash;13 (Support)</div></div>
+          <div class="sq sq-org"><div class="sq-lbl">Business &middot; Internal</div><div class="sq-title">Organizational Infrastructure</div><div class="sq-text">Administrative infrastructure, processes, skills</div><div class="sq-pcf">PCF: Categories 6, 7, 9-13 (Support)</div></div>
           <div class="sq sq-is"><div class="sq-lbl">I/T &middot; Internal</div><div class="sq-title">I/S Infrastructure</div><div class="sq-text">IS infrastructure, IT processes, IT skills</div><div class="sq-pcf">PCF: Category 8.0 + cross-domain enablement</div></div>
         </div>
-        <div class="sam-note">PCF covers all four SAM quadrants simultaneously &mdash; making it one of the few frameworks that functions as a cross-domain alignment instrument rather than a tool for one perspective only.</div>
+        <div class="sam-note">PCF covers all four SAM quadrants simultaneously: making it one of the few frameworks that functions as a cross-domain alignment instrument rather than a tool for one perspective only.</div>
       </div>
       <div class="sam-points reveal">
         <div class="sam-point">
           <div class="sam-point-title">Functional Integration</div>
-          <div class="sam-point-text">PCF provides a single unified taxonomy covering both business-side (Categories 1&ndash;6) and IT/support-side (Categories 7&ndash;13) processes. Business and IT are classified, benchmarked, and improved within the same structure &mdash; not separate silos.</div>
+          <div class="sam-point-text">PCF provides a single unified taxonomy covering both business-side (Categories 1-6) and IT/support-side (Categories 7-13) processes. Business and IT are classified, benchmarked, and improved within the same structure, not separate silos.</div>
         </div>
         <div class="sam-point">
           <div class="sam-point-title">Strategic Integration</div>
-          <div class="sam-point-text">Category 1.0 (Develop Vision and Strategy) and Category 8.0 (Manage IT) work in tandem. Organizations define business strategy and IT strategy using the same process language &mdash; ensuring IT planning is directly informed by overall business direction.</div>
+          <div class="sam-point-text">Category 1.0 (Develop Vision and Strategy) and Category 8.0 (Manage IT) work in tandem. Organizations define business strategy and IT strategy using the same process language, ensuring IT planning is directly informed by overall business direction.</div>
         </div>
         <div class="sam-point gold-border">
           <div class="sam-point-title">Are Business and IT Aligned?</div>
-          <div class="sam-point-text">Yes &mdash; and the PCF is the instrument that makes that alignment visible and measurable.</div>
+          <div class="sam-point-text">Yes, and the PCF is the instrument that makes that alignment visible and measurable.</div>
         </div>
         <div class="alignment-block">
           <div class="alignment-title">PCF achieves Business-IT alignment by:</div>
@@ -1072,10 +1094,9 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
   </div>
 </section>
 
-<!-- SMES -->
 <section id="smes">
   <div class="container">
-    <div class="section-eyebrow reveal">08 &mdash; Experts &amp; Adopters</div>
+    <div class="section-eyebrow reveal">08: Experts &amp; Adopters</div>
     <h2 class="section-title reveal">Who Uses &amp; Shapes the PCF?</h2>
     <p class="section-lead reveal">The PCF is developed and maintained by APQC with input from a global network of practitioners, researchers, and member organizations.</p>
 
@@ -1095,7 +1116,7 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
         <div class="sme-group-sub">Types of Organizations</div>
         <div class="sme-cards">
           <div class="sme-card"><div class="sme-name">Industry-Specific Adopters</div><div class="sme-desc">Organizations in regulated or specialized sectors (banking, healthcare, aerospace) using industry-specific PCF versions tailored to unique operational needs.</div></div>
-          <div class="sme-card"><div class="sme-name">Large Cross-Industry Corporations</div><div class="sme-desc">Diversified conglomerates using the Cross-Industry PCF as a "Rosetta Stone" &mdash; a common language across different business units speaking the same process language.</div></div>
+          <div class="sme-card"><div class="sme-name">Large Cross-Industry Corporations</div><div class="sme-desc">Diversified conglomerates using the Cross-Industry PCF as a "Rosetta Stone": a common language across different business units speaking the same process language.</div></div>
           <div class="sme-card"><div class="sme-name">APQC Member Organizations</div><div class="sme-desc">Over 1,000 organizations worldwide who actively shape the PCF's evolution through APQC's member-based non-profit model.</div></div>
         </div>
       </div>
@@ -1116,20 +1137,18 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
   </div>
 </section>
 
-<!-- ALTERNATIVES -->
 <section id="alternatives">
   <div class="container">
-    <div class="section-eyebrow reveal">09 &mdash; Alternatives</div>
+    <div class="section-eyebrow reveal">09: Alternatives</div>
     <h2 class="section-title reveal">Other Process Frameworks</h2>
-    <p class="section-lead reveal">The PCF is the most widely used, but it is not the only option. Here are two comparable frameworks &mdash; and how they differ in purpose and grounding.</p>
+    <p class="section-lead reveal">The PCF is the most widely used, but it is not the only option. Here are two comparable frameworks and how they differ in purpose and grounding.</p>
 
     <div class="alt-cards">
       <div class="alt-card vrm-card reveal">
         <div class="alt-card-header">
-          <div class="alt-card-name">VRM <span class="alt-badge alt-badge-vrm">VRM</span></div>
-          <div class="alt-full">Value Reference Model</div>
+          <div class="alt-card-name">Value Reference Model <span class="alt-badge alt-badge-vrm">VRM</span></div>
         </div>
-        <div class="alt-desc">A standardized cross-industry framework providing a unified taxonomy for classifying and benchmarking end-to-end enterprise business processes &mdash; organized around <strong>value creation logic</strong> rather than functional categories.</div>
+        <div class="alt-desc">A standardized cross-industry framework providing a unified taxonomy for classifying and benchmarking end-to-end enterprise business processes, organized around <strong>value creation logic</strong> rather than functional categories.</div>
         <div style="font-family:var(--font-mono);font-size:.63rem;color:var(--blue2);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.45rem;">Similarities with PCF</div>
         <div class="sim-list">
           <div class="sim-item"><div class="sim-dot"></div>Cross-industry, enterprise-wide process classification</div>
@@ -1139,10 +1158,9 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
       </div>
       <div class="alt-card scor-card reveal">
         <div class="alt-card-header">
-          <div class="alt-card-name">SCOR-DS <span class="alt-badge alt-badge-scor">SCOR</span></div>
-          <div class="alt-full">Supply Chain Operations Reference &ndash; Digital Standard</div>
+          <div class="alt-card-name">Supply Chain Operations Reference <span class="alt-badge alt-badge-scor">SCOR-DS</span></div>
         </div>
-        <div class="alt-desc">A universal standard providing a unified framework for classifying, measuring, and benchmarking end-to-end supply chain processes &mdash; organized around the <strong>physical flow of goods</strong> and supply chain execution.</div>
+        <div class="alt-desc">A universal standard providing a unified framework for classifying, measuring, and benchmarking end-to-end supply chain processes, organized around the <strong>physical flow of goods</strong> and supply chain execution.</div>
         <div style="font-family:var(--font-mono);font-size:.63rem;color:#2E7D32;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.45rem;">Similarities with PCF</div>
         <div class="sim-list">
           <div class="sim-item"><div class="sim-dot" style="background:#4CAF50;"></div>Cross-industry frameworks for classifying business processes</div>
@@ -1174,10 +1192,9 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
   </div>
 </section>
 
-<!-- RESOURCES -->
 <section id="resources">
   <div class="container">
-    <div class="section-eyebrow reveal">10 &mdash; Resources</div>
+    <div class="section-eyebrow reveal">10: Resources</div>
     <h2 class="section-title reveal">References &amp; Further Reading</h2>
     <p class="section-lead reveal">All materials used in building this toolkit, plus recommended next steps for anyone wanting to go deeper.</p>
     <div class="res-grid">
@@ -1232,7 +1249,7 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
       <div class="res-card reveal" style="cursor:default;">
         <div class="res-icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
         <div class="res-title">Course Materials</div>
-        <div class="res-text">Lovenia, S.A. (2024). <em>Modern IT Management Frameworks: Modules 2&ndash;3.</em> Ateneo de Manila University, DISCS.</div>
+        <div class="res-text">Lovenia, S.A. (2024). <em>Modern IT Management Frameworks: Modules 2-3.</em> Ateneo de Manila University, DISCS.</div>
         <div style="margin-top:.6rem;font-size:.68rem;font-family:var(--font-mono);color:rgba(255,255,255,.25);letter-spacing:.06em;">INTERNAL</div>
       </div>
     </div>
@@ -1242,7 +1259,7 @@ footer{background:#060E18;padding:2.2rem 2rem;text-align:center;border-top:1px s
 <footer>
   <div class="footer-logo">APQC-PCF Online Learning Toolkit</div>
   <div class="footer-text">
-    Prepared by <strong style="color:rgba(255,255,255,.4);">aisus</strong> for ISCS 30.40 &mdash; Modern IT Management Frameworks<br>
+    Prepared for ISCS 30.40: Modern IT Management Frameworks<br>
     Ateneo de Manila University &middot; Instructor: Sandra A. Lovenia, MS, ITIL<br>
     All external links lead to official sources. This toolkit is for educational use only.
   </div>
@@ -1286,18 +1303,18 @@ const cats={
   cat1:{num:'1.0',title:'Develop Vision and Strategy',type:'op',desc:'Establishes direction and vision for an organization. It involves defining the business concept and long-term vision, developing the business strategy, and managing strategic initiatives. Processes in this category focus on creating a vision, mission, and strategic objectives, culminating in measures to ensure the organization moves in the desired direction.',groups:['Define the business concept and long-term vision','Develop business strategy','Manage strategic initiatives']},
   cat2:{num:'2.0',title:'Develop and Manage Products & Services',type:'op',desc:'Involves analyzing the current portfolio against market opportunities and designing and developing products and services in response. Processes focus on developing additions to products and services and aligning these with corporate strategy. The development encompasses design, build, and evaluation through to manufacturing and final product validation.',groups:['Manage product and service portfolio','Develop products and services','Test products and services']},
   cat3:{num:'3.0',title:'Market and Sell Products & Services',type:'op',desc:'All about an organization understanding markets and customers, then developing the appropriate marketing and sales strategy in response. The strategy informs development and management of marketing and sales plans, specific offerings, pricing and channel strategy through to managing sales on an ongoing basis.',groups:['Understand markets, customers, and capabilities','Develop marketing strategy','Develop sales strategy','Manage sales partners and alliances']},
-  cat4:{num:'4.0',title:'Deliver Products and Services',type:'op',desc:'Describes the supply chain — planning supply chain resources, procuring materials and services, physical manufacturing through to delivery to the customer, and management of logistics and warehousing. Processes include scheduling production to meet demand, selecting suppliers, developing contracts, ensuring quality standards, and defining a logistics strategy.',groups:['Plan and align supply chain resources','Procure materials and services','Produce/manufacture product','Deliver products to customers','Manage logistics and warehousing']},
-  cat5:{num:'5.0',title:'Manage Customer Service',type:'op',desc:'Covers those who deal with customers before and after the delivery of a service — distinct from those actually delivering the service (Category 4.0). Includes development of customer service policies, management standards for the customer service workforce, and measurement of customer satisfaction.',groups:['Develop customer service strategy','Plan and manage customer service operations','Evaluate and measure customer service']},
+  cat4:{num:'4.0',title:'Deliver Products and Services',type:'op',desc:'Describes the supply chain: planning supply chain resources, procuring materials and services, physical manufacturing through to delivery to the customer, and management of logistics and warehousing. Processes include scheduling production to meet demand, selecting suppliers, developing contracts, ensuring quality standards, and defining a logistics strategy.',groups:['Plan and align supply chain resources','Procure materials and services','Produce/manufacture product','Deliver products to customers','Manage logistics and warehousing']},
+  cat5:{num:'5.0',title:'Manage Customer Service',type:'op',desc:'Covers those who deal with customers before and after the delivery of a service: distinct from those actually delivering the service (Category 4.0). Includes development of customer service policies, management standards for the customer service workforce, and measurement of customer satisfaction.',groups:['Develop customer service strategy','Plan and manage customer service operations','Evaluate and measure customer service']},
   cat6:{num:'6.0',title:'Develop and Manage Human Capital',type:'sup',desc:'Describes the planning of and policies to support HR in recruiting and rewarding employees through to retirement, as well as management of employee personal information. Processes include monitoring HR plans, the full recruiting lifecycle, managing employee performance, training and development, redeployment, relocation, and maintenance of all employee data.',groups:['Develop and manage HR planning','Recruit, source, and select employees','Manage employee orientation and deployment','Manage employee performance','Manage employee separation']},
   cat7:{num:'7.0',title:'Manage Financial Resources',type:'sup',desc:'Describes the activities of financial planning and revenue accounting as well as general accounting and reporting. Also includes managing fixed assets, payroll, paying organizational bills, monitoring financial compliance, and management of tax obligations.',groups:['Perform financial planning and management accounting','Perform revenue accounting','Perform cost management','Manage fixed assets','Process payroll','Process accounts payable and expense reimbursement']},
-  cat8:{num:'8.0',title:'Manage Information Technology',type:'it',desc:'Describes managing the business of IT — developing IT customer relationships, developing and implementing data protection controls, defining what information is important and how it is managed, developing technology solutions, deploying those solutions, and providing ongoing support. Category 8.0 is the primary IT category in PCF v8.0.',groups:['Develop IT business strategy','Develop and manage IT customer relationships','Develop and manage IT resilience and security','Manage information','Develop and implement IT solutions','Deploy IT solutions','Deliver and support IT services']},
+  cat8:{num:'8.0',title:'Manage Information Technology',type:'it',desc:'Describes managing the business of IT: developing IT customer relationships, developing and implementing data protection controls, defining what information is important and how it is managed, developing technology solutions, deploying those solutions, and providing ongoing support. Category 8.0 is the primary IT category in PCF v8.0.',groups:['Develop IT business strategy','Develop and manage IT customer relationships','Develop and manage IT resilience and security','Manage information','Develop and implement IT solutions','Deploy IT solutions','Deliver and support IT services']},
   cat9:{num:'9.0',title:'Acquire, Construct & Manage Assets',type:'sup',desc:'Covers the designing and construction or acquisition of non-productive assets and their upkeep, as well as ongoing acquisition and maintenance policies for productive assets and disposal of both. Processes describe designing engineering solutions, testing equipment, and planning how to discontinue assets at end of life cycle.',groups:['Design and construct/acquire assets','Maintain and service assets','Dispose of assets']},
   cat10:{num:'10.0',title:'Manage Enterprise Risk, Compliance & Resiliency',type:'sup',desc:'Includes managing enterprise risk through establishing an enterprise risk management framework and policies, and managing environmental health and safety. Processes include management of regulatory compliance, coordination of risk management processes, monitoring and managing environmental health and safety programs, and ensuring EHS regulatory compliance.',groups:['Manage enterprise risk','Manage regulatory compliance','Manage business resiliency','Manage environmental health and safety (EHS)']},
   cat11:{num:'11.0',title:'Manage External Relationships',type:'sup',desc:'Encompasses building and managing relationships with lenders, external analysts, shareholders, government and industry bodies, and public relationship programs. Processes describe the lifecycle of managing relationships with different bodies and include reporting of financial earnings, operations and audits, and social responsibility programs.',groups:['Build investor relationships','Manage government and industry relationships','Manage public relations program','Manage legal and ethical issues']},
   cat12:{num:'12.0',title:'Develop and Manage Business Capabilities',type:'sup',desc:'Describes an organization managing their business processes, managing projects, and managing change that results from implementing project outcomes. Includes development and management of the organization\'s knowledge and measuring and benchmarking the organization. Knowledge management covers creating, identifying, collecting, reviewing, sharing, and using knowledge.',groups:['Manage business processes','Manage portfolio, programs, and projects','Manage enterprise quality','Manage change','Develop and manage knowledge assets','Measure and benchmark organizational performance']},
   cat13:{num:'13.0',title:'Manage Process & Knowledge',type:'sup',desc:'A newer category in the PCF that covers process governance frameworks, process improvement approaches, portfolio and program management for processes, and knowledge management across the enterprise. This category reflects the growing recognition that process management and knowledge management are themselves core enterprise capabilities requiring explicit governance.',groups:['Establish process management governance','Manage process improvement initiatives','Manage organizational knowledge','Support continuous improvement culture']}
 };
-const typeMap={op:'Operating',sup:'Support',it:'IT Focus — Category 8.0'};
+const typeMap={op:'Operating',sup:'Support',it:'IT Focus: Category 8.0'};
 const typeClass={op:'modal-type-op',sup:'modal-type-sup',it:'modal-type-it'};
 
 function openModal(id){
